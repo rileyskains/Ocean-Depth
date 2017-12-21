@@ -100,6 +100,10 @@ div#waves {
 	background: linear-gradient(#3DB6FD, #35A8EB);
 	height: 2000px;
 }
+#epipelagic-text {
+	z-index: 100;
+	position: relative;
+}
 #mesopelagic {
 	background: linear-gradient(#35A8EB, #176391);
 	height: 8000px;
@@ -142,9 +146,20 @@ div#waves {
 }
 #sea-turtle {
 	height: 300px;
-	animation: bobbing 15s linear infinite;
+	animation: turtle-swimming 15s linear infinite;
 	overflow: hidden;
 	margin: 0;
+	margin-top: -300px;
+	padding: 0;
+	position: absolute;
+	z-index: 1;
+}
+#dolphin-whole {
+	width: 700px;
+	animation: dolphin-swimming 10s linear infinite;
+	overflow: hidden;
+	margin: 0;
+	margin-top: -800px;
 	padding: 0;
 	position: absolute;
 	z-index: 3;
@@ -178,11 +193,19 @@ div#waves {
 		transform: translate(85px, 0%);
 	}
 }
-@keyframes bobbing {
+@keyframes turtle-swimming {
 	0% {
 		transform: translate(-100vw, 2000px)
 	}
 	100% {
 		transform: translate(100vw, 2300px)
+	}
+}
+@keyframes dolphin-swimming {
+	0% {
+		transform: translate(100vw, 2100px)
+	}
+	100% {
+		transform: translate(-100vw, 2400px)
 	}
 }
