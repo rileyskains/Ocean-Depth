@@ -34,6 +34,11 @@ p {
 .underline {
     text-decoration: underline;
 }
+#gauge {
+	position: fixed;
+	bottom: 2%;
+	right: 2%;
+}
 
 
 /* Everything within the Surface */
@@ -91,23 +96,23 @@ div#waves {
 		height: 17vw;
 	}
 }
-div#epipelagic {
+#epipelagic {
 	background: linear-gradient(#3DB6FD, #35A8EB);
 	height: 2000px;
 }
-div#mesopelagic {
+#mesopelagic {
 	background: linear-gradient(#35A8EB, #176391);
 	height: 8000px;
 }
-div#bathypelagic {
+#bathypelagic {
 	background: linear-gradient(#176391, #06151F);
 	height: 30000px;
 }
-div#abyssopelagic {
+#abyssopelagic {
 	background: linear-gradient(#06151F, #000000);
 	height: 20000px;
 }
-div#hadalpelagic {
+#hadalpelagic {
 	background-color: #000000;
 	height: 50000px;
 }
@@ -115,7 +120,7 @@ div#hadalpelagic {
 
 /* Creatures! */
 
-div#seagull-1 {
+#seagull-1 {
 	height: 100px;
 	animation: bird-flying 7s linear infinite;
 	overflow: hidden;
@@ -124,7 +129,7 @@ div#seagull-1 {
 	position: absolute;
 	z-index: 3;
 }
-div#seagull-2 {
+#seagull-2 {
 	height: 75px;
 	animation: bird-flying-reverse 8s linear infinite;
 	animation-delay: 3s;

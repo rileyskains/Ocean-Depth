@@ -63,6 +63,8 @@
            </svg>
         </div>
     </div>
+<div id="scroll-progress-start">
+        <div id="gauge"></div>
 	<div id="epipelagic" class="parallax-bg-2">
             <div id="sea-turtle" class="parallax-bg-3">
                     <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;" version="1.1" viewbox="0 0 736 631" width="100%" xmlns="http://www.w3.org/2000/svg">
@@ -213,10 +215,12 @@
         <h3><span class="underline">Pressure at Deepest Point</span></h3>
             <h3>110,499.84 kPa, 16,026.64 psi, 1,090.55 atm</h3>
     </div>
+</div>
     <script>
         window.onscroll = function (e) {
-    console.log(window.scrollY - 100vw); // Value of scroll Y in px
-};
+            let metersDown = Math.round(window.scrollY/10);
+            document.getElementById('gauge').innerHTML = `You are ${metersDown} meters deep!`
+        };
     </script>
 </body>
 </html>

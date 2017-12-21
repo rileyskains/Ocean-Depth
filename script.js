@@ -9,5 +9,4 @@ jQuery(document).ready(function(){
           $('.parallax-bg-2').css('top',(0-(scrolled*.4))+'px');
           $('.parallax-bg-3').css('top',(0-(scrolled*.75))+'px');
       }
-   
    }); 
