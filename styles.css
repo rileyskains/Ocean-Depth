@@ -207,6 +207,17 @@ div#waves {
 	position: absolute;
 	z-index: 3;
 }
+#eel {
+	width: 200px;
+	animation: eel-poking 5s cubic-bezier(0.215, 0.610, 0.355, 1) infinite;
+	overflow: hidden;
+	margin: 0;
+	margin-top: 150px;
+	right: 100px;
+	padding: 0;
+	position: absolute;
+	z-index: 2;
+}
 
 /* Animation Keyframes in the order in which they appear */
 
@@ -237,17 +248,28 @@ div#waves {
 }
 @keyframes turtle-swimming {
 	0% {
-		transform: translate(-100vw, 0px)
+		transform: translate(-100vw, 150px)
 	}
 	100% {
-		transform: translate(100vw, 300px)
+		transform: translate(100vw, 500px)
 	}
 }
 @keyframes dolphin-swimming {
 	0% {
-		transform: translate(100vw, 50px)
+		transform: translate(100vw, 450px)
 	}
 	100% {
-		transform: translate(-100vw, 300px)
+		transform: translate(-100vw, 700px)
+	}
+}
+@keyframes eel-poking {
+	0% {
+		transform: translateX(0px);
+	}
+	50% {
+		transform: translateX(-100px);
+	}
+	100% {
+		transform: translateX(0px);
 	}
 }
