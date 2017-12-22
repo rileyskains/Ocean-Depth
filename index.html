@@ -64,7 +64,16 @@
         </div>
     </div>
 <div id="scroll-progress-start">
-        <div id="gauge"></div>
+        <div id="brass-gauge">
+        <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;" version="1.1" viewbox="0 0 140 80" width="100%" xmlns="http://www.w3.org/2000/svg">
+            <path d="M140,9.418c0,-5.198 -4.22,-9.418 -9.418,-9.418l-121.164,0c-5.198,0 -9.418,4.22 -9.418,9.418l0,61.164c0,5.198 4.22,9.418 9.418,9.418l121.164,0c5.198,0 9.418,-4.22 9.418,-9.418l0,-61.164Z" id="brass-outer" style="fill:#f7ba61;"></path>
+            <path d="M135.435,14.138c0,-4.395 -3.569,-7.964 -7.965,-7.964l-114.94,0c-4.396,0 -7.965,3.569 -7.965,7.964l0,51.724c0,4.395 3.569,7.964 7.965,7.964l114.94,0c4.396,0 7.965,-3.569 7.965,-7.964l0,-51.724Z" id="brass-outer1" serif:id="brass-outer" style="fill:#fef1de;"></path>
+        </svg>
+        </div>
+        <div id="gauge-meter">
+            <p id="depth-word">DEPTH</p>
+            <p id="gauge">0 meters</p>
+        </div>
 	<div id="epipelagic">
             
     <div id="epipelagic-text">
@@ -445,7 +454,7 @@
     <script>
         window.onscroll = function (e) {
             let metersDown = Math.round(window.scrollY/10);
-            document.getElementById('gauge').innerHTML = `You are ${metersDown} meters deep!`
+            document.getElementById('gauge').innerHTML = `${metersDown} meters`
         };
     </script>
 </body>

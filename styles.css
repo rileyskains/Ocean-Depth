@@ -38,10 +38,26 @@ td{
 	border-radius: 10px;
 	padding: 10px;
 }
-#gauge {
+#brass-gauge {
 	position: fixed;
 	bottom: 2%;
 	right: 2%;
+	width: 150px;
+	z-index: 1000;
+}
+#gauge-meter {
+	position: fixed;
+	bottom: .75%;
+	right: 2%;
+	z-index: 1001;
+	width: 150px;
+	height: 90px;
+	text-align: center;
+}
+#gauge-meter p {
+	color: #444444;
+	margin: 0;
+	padding: 0;
 }
 
 
