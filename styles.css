@@ -166,6 +166,7 @@ div#waves {
 }
 #sea-turtle {
 	height: 300px;
+	width: auto;
 	animation: turtle-swimming 15s linear infinite;
 	overflow: hidden;
 	margin: 0;
