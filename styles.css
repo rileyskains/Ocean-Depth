@@ -31,6 +31,19 @@ p {
     margin-left: 50px;
     margin-right: 50px;
 }
+table {
+	color: white;
+	font-size: 1.5em;
+	margin: 0 auto;
+	text-align: center;
+	border-collapse: collapse;
+	margin-top: 50px;
+}
+td{
+	border: 1px solid white;
+	border-radius: 10px;
+	padding: 10px;
+}
 .underline {
     text-decoration: underline;
 }
@@ -149,7 +162,6 @@ div#waves {
 	animation: turtle-swimming 15s linear infinite;
 	overflow: hidden;
 	margin: 0;
-	margin-top: -300px;
 	padding: 0;
 	position: absolute;
 	z-index: 1;
@@ -159,12 +171,30 @@ div#waves {
 	animation: dolphin-swimming 10s linear infinite;
 	overflow: hidden;
 	margin: 0;
-	margin-top: -800px;
 	padding: 0;
 	position: absolute;
 	z-index: 3;
 }
-
+#seaweed {
+	width: 400px;
+	overflow: hidden;
+	margin: 0;
+	margin-top: -300px;
+	margin-left: -75px;
+	padding: 0;
+	position: absolute;
+	z-index: 3;
+}
+#seaweed-flipped {
+	width: 550px;
+	overflow: hidden;
+	margin: 0;
+	margin-top: -300px;
+	right: -75px;
+	padding: 0;
+	position: absolute;
+	z-index: 3;
+}
 
 /* Animation Keyframes in the order in which they appear */
 
@@ -195,17 +225,17 @@ div#waves {
 }
 @keyframes turtle-swimming {
 	0% {
-		transform: translate(-100vw, 2000px)
+		transform: translate(-100vw, 0px)
 	}
 	100% {
-		transform: translate(100vw, 2300px)
+		transform: translate(100vw, 300px)
 	}
 }
 @keyframes dolphin-swimming {
 	0% {
-		transform: translate(100vw, 2100px)
+		transform: translate(100vw, 50px)
 	}
 	100% {
-		transform: translate(-100vw, 2400px)
+		transform: translate(-100vw, 300px)
 	}
 }
