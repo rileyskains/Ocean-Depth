@@ -22,6 +22,12 @@ h2 {
     margin: 0 auto;
     color: #ffffff;
 }
+h3 {
+	text-align: center;
+	font-size: 2em;
+	margin: 0 auto;
+	color: #ffffff;
+}
 p {
 	text-align: center;
     font-size: 1.25em;
@@ -131,6 +137,7 @@ div#waves {
 #mesopelagic {
 	background: linear-gradient(#35A8EB, #176391);
 	height: 8000px;
+	position: relative;
 }
 #bathypelagic {
 	background: linear-gradient(#176391, #06151F);
@@ -145,6 +152,14 @@ div#waves {
 	height: 50000px;
 }
 
+
+/* Buildings! */
+/* Calculate the top property by subtracting the height of the zone by the height of the building times 10 */
+
+#eiffel-text {
+	position: absolute;
+	top: 1240px;
+}
 
 /* Creatures! */
 
