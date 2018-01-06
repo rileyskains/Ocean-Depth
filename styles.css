@@ -126,6 +126,7 @@ div#waves {
 		height: 17vw;
 	}
 }
+/* 0 - 200 meters */
 #epipelagic {
 	background: linear-gradient(#3DB6FD, #35A8EB);
 	height: 2000px;
@@ -134,19 +135,27 @@ div#waves {
 	z-index: 100;
 	position: relative;
 }
+
+/* 200 - 1000 meters */
 #mesopelagic {
 	background: linear-gradient(#35A8EB, #176391);
 	height: 8000px;
 	position: relative;
 }
+
+/* 1000 - 4000 meters */
 #bathypelagic {
 	background: linear-gradient(#176391, #06151F);
 	height: 30000px;
 }
+
+/* 4000 - 6000 meters */
 #abyssopelagic {
 	background: linear-gradient(#06151F, #000000);
 	height: 20000px;
 }
+
+/* 6000 - 11000 meters */
 #hadalpelagic {
 	background-color: #000000;
 	height: 50000px;
@@ -154,12 +163,24 @@ div#waves {
 
 
 /* Buildings! */
-/* Calculate the top property by subtracting the height of the zone by the height of the building times 10 */
+
+/* 
+For the Eiffel Tower, the highest point of the zone it belongs in is 200 meters.
+The height of the Eiffel tower is 324 meters. 
+324 - 200 = 124
+124 * 10 = 1240
+
+This means the Eiffel Tower's top property will be:
+top: 1240px;
+*/
 
 #eiffel-text {
 	position: absolute;
 	top: 1240px;
+	right: 0;
+	left: 0;
 }
+
 
 /* Creatures! */
 

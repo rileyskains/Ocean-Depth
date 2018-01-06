@@ -1,3 +1,4 @@
+//currently unused. May use in future.
 jQuery(document).ready(function(){
     $(window).scroll(function(e){
         parallaxScroll();
