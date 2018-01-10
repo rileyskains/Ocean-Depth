@@ -180,6 +180,48 @@ top: 1240px;
 	right: 0;
 	left: 0;
 }
+#empire-text {
+	position: absolute;
+	top: 1810px;
+	right: 0;
+	left: 0;
+}
+#willis-text {
+	position: absolute;
+	top: 2420px;
+	right: 0;
+	left: 0;
+}
+#petronas-text {
+	position: absolute;
+	top: 2520px;
+	right: 0;
+	left: 0;
+}
+#taipei-text {
+	position: absolute;
+	top: 3080px;
+	right: 0;
+	left: 0;
+}
+#oneworld-text {
+	position: absolute;
+	top: 3410px;
+	right: 0;
+	left: 0;
+}
+#shanghai-text {
+	position: absolute;
+	top: 4320px;
+	right: 0;
+	left: 0;
+}
+#burjkhalifa-text {
+	position: absolute;
+	top: 6280px;
+	right: 0;
+	left: 0;
+}
 
 
 /* Creatures! */
